@@ -1,0 +1,4 @@
+¿Para qué sirve el comando npm init?
+R.- El comando npm init se utiliza para crear un archivo package.json en un proyecto Node.js. Este archivo 
+contiene la información esencial sobre el proyecto, como su nombre, versión, dependencias, scripts, autor, 
+licencia, entre otros. El package.json es clave para la gestión de dependencias y configuración del proyecto.
