@@ -1,0 +1,55 @@
+—¿Cómo es que se instalan paquetes con yarn?
+R.- Para instalar paquetes con yarn, el gestor de paquetes alternativo a npm, sigues estos pasos básicos:
+1. Inicializar un proyecto (si no lo has hecho):
+Si aún no tienes un proyecto inicializado, puedes hacerlo con el siguiente comando, que crea el archivo package.json necesario:
+
+yarn init
+
+Si ya tienes un proyecto existente, puedes omitir este paso.
+2. Instalar paquetes:
+Para instalar un paquete con yarn, usa el comando yarn add. Aquí algunos ejemplos:
+Instalar un paquete:
+
+yarn add nombre-del-paquete
+
+Esto agregará el paquete a las dependencias del archivo package.json.
+Instalar una versión específica:
+
+yarn add nombre-del-paquete@version
+
+Por ejemplo, para instalar la versión 1.2.3 de un paquete:
+
+yarn add lodash@1.2.3
+
+Instalar un paquete como dependencia de desarrollo: Para instalar un paquete que solo se use en el entorno de 
+desarrollo (como herramientas de testing o linters), usa la opción -D o --dev:
+
+yarn add nombre-del-paquete --dev
+
+3. Instalar todas las dependencias (si ya existe un archivo package.json o yarn.lock):
+Si el proyecto ya tiene un archivo package.json o yarn.lock, y solo quieres instalar todas las dependencias listadas, usa:
+
+yarn install
+
+4. Eliminar un paquete:
+Para eliminar un paquete instalado, puedes usar el comando:
+
+yarn remove nombre-del-paquete
+
+5. Actualizar un paquete:
+Si deseas actualizar un paquete específico a su última versión compatible según package.json:
+
+yarn upgrade nombre-del-paquete
+
+—¿Cómo es que se borran paquetes con yarn?
+R.- Eliminar un paquete:
+Para eliminar un paquete instalado, puedes usar el comando:
+Usar el código
+yarn remove nombre-del-paquete
+
+—¿Hay algún equivalente en yarn que haga lo mismo que npm init?
+R.- Sí, el equivalente a npm init en yarn es el comando:
+yarn init
+Este comando se utiliza para inicializar un nuevo proyecto, creando un archivo package.json con la información 
+básica del proyecto. Al ejecutarlo, se te harán una serie de preguntas sobre el nombre, versión, descripción, 
+punto de entrada, autor, licencia, entre otros, de manera similar a npm init.
